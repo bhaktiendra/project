@@ -23,7 +23,7 @@
           <thead>
             <tr>
                 <th>
-                    <a href="." ng-click="sortType = 'nip'; sortReverse = !sortReverse">
+                    <a href="#/search/{{ searchArgs }}" ng-click="sortType = 'nip'; sortReverse = !sortReverse">
                     NIP
                     <span ng-show="sortType == 'nip' && !sortReverse" class="fa fa-caret-down"></span>
                     <span ng-show="sortType == 'nip' && sortReverse" class="fa fa-caret-up"></span>
