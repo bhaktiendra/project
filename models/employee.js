@@ -8,7 +8,8 @@ var EmployeeSchema = new Schema({
     baris: String,
     kelompok: String,
     nomor: String,
-    kolom: String
+    kolom: String,
+    pdf: String
 
 });
 

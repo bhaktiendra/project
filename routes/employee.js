@@ -14,6 +14,7 @@ router.route('/')
             employee.kelompok = req.body.kelompok;
             employee.nomor = req.body.nomor;
             employee.kolom = req.body.kolom;
+            employee.pdf = 'testpdf';
 
             employee.save(function(err, data){
                 if(err)

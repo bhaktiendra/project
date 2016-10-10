@@ -9,8 +9,8 @@ var bodyParser = require('body-parser');
 require('./models/employee');
 
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://bhakti:Pr0digius@ds053196.mlab.com:53196/employeedata');
-// mongoose.connect('mongodb://localhost:27017/employeedata');
+// mongoose.connect('mongodb://bhakti:Pr0digius@ds053196.mlab.com:53196/employeedata');
+mongoose.connect('mongodb://localhost:27017/employeedata');
 
 var routes = require('./routes/index');
 var employee = require('./routes/employee');
