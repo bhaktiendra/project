@@ -41,7 +41,7 @@
             </div>
         </div>
          <div class="form-group">
-            <label class="control-label col-sm-2" for="baris">Kelompok</label>
+            <label class="control-label col-sm-2" for="kelompok">Kelompok</label>
             <div class="col-sm-6"> 
                 <input type="text" class="form-control" id="kelompok"
                     ng-model="employee.kelompok"
@@ -59,11 +59,20 @@
             </div>
         </div>
          <div class="form-group">
-            <label class="control-label col-sm-2" for="baris">Kolom</label>
+            <label class="control-label col-sm-2" for="kolom">Kolom</label>
             <div class="col-sm-6"> 
                 <input type="text" class="form-control" id="kolom"
                     ng-model="employee.kolom"
                     placeholder="Enter Kolom"
+                    required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="pdf">PDF</label>
+            <div class="col-sm-6"> 
+                <input type="text" class="form-control" id="pdf"
+                    ng-model="employee.pdf"
+                    placeholder="Enter PDF"
                     required>
             </div>
         </div>

@@ -71,6 +71,7 @@
                     <span ng-show="sortType == 'kolom' && sortReverse" class="fa fa-caret-up"></span>
                     </a>
                 </th>
+                <th>PDF</th>
             </tr>
         </thead>
         <tbody>
@@ -82,6 +83,7 @@
                 <td>{{ emp.kelompok }}</td>
                 <td>{{ emp.nomor }}</td>
                 <td>{{ emp.kolom }}</td>
+                <td>{{ emp.pdf }}</td>
                 <td align="center">
                     <a href="#/employee/{{ emp._id }}" tooltip="Edit Employee" class="btn btn-warning btn-xs">
                         <span class="glyphicon glyphicon-pencil"></span>

@@ -10,7 +10,6 @@ var EmployeeSchema = new Schema({
     nomor: String,
     kolom: String,
     pdf: String
-
 });
 
 mongoose.model('Employee', EmployeeSchema);

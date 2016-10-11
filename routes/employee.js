@@ -14,7 +14,7 @@ router.route('/')
             employee.kelompok = req.body.kelompok;
             employee.nomor = req.body.nomor;
             employee.kolom = req.body.kolom;
-            employee.pdf = 'testpdf';
+            employee.pdf = req.body.pdf;
 
             employee.save(function(err, data){
                 if(err)
@@ -51,6 +51,7 @@ router.route('/:employeeId')
                 employee.kelompok = req.body.kelompok;
                 employee.nomor = req.body.nomor;
                 employee.kolom = req.body.kolom;
+                employee.pdf = req.body.pdf;
 
                 employee.save(function(err, data){
                     if(err)

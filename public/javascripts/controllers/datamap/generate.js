@@ -1,7 +1,6 @@
 app.controller('generateDatamapController', generateDatamapController);
-function generateDatamapController($scope, $routeParam){
+function generateDatamapController($scope){
     $scope.title = "Data Map";
-    $scope.employeeId = $routeParam.employeeId;
     
 }
 
