@@ -15,7 +15,7 @@ mongoose.connect('mongodb://bhakti:Pr0digius@ds053196.mlab.com:53196/employeedat
 var routes = require('./routes/index');
 var employee = require('./routes/employee');
 var search = require('./routes/search');
-// var datamap = require('./routes/datamap');
+var datamap = require('./routes/datamap');
 
 var app = express();
 
@@ -34,7 +34,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/employee', employee);
 app.use('/search', search);
-// app.use('/datamap', datamap);
+app.use('/datamap', datamap);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

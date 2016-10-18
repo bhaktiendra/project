@@ -3,9 +3,10 @@ app.factory('employeeService', function($http){
       getAllEmployee: getAllEmployee,
       getEmployeeById: getEmployeeById,
       getEmployeeBySearch: getEmployeeBySearch,
+      getEmployeeByNip: getEmployeeByNip,
       createEmployee: createEmployee,
       modifyEmployee: modifyEmployee,
-      deleteEmployee: deleteEmployee
+      deleteEmployee: deleteEmployee,
   };
 
   return employeeService;
@@ -23,6 +24,13 @@ app.factory('employeeService', function($http){
   function getEmployeeBySearch(searchArgs){
       return $http({
           url: '/search/'+ searchArgs,
+          method: 'GET'
+      });
+  }
+
+  function getEmployeeByNip(employeeNip){
+      return $http({
+          url: '/datamap/'+ employeeNip,
           method: 'GET'
       });
   }
